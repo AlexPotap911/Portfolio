@@ -135,7 +135,7 @@ body {
 }
 .dark .project__btn {
   border: 1px solid #fff;
-  background-image: url(/img/icons/gitHub.svg);
+  background-image: url(../img/icons/gitHub.svg);
   background-size: 24px;
 }
 
@@ -468,7 +468,7 @@ body {
   padding: 12px 7px 12px 40px;
   border-radius: 5px;
   border: 1px solid #171718;
-  background-image: url(/img/icons/gitHub-black.svg);
+  background-image: url(../img/icons/gitHub-black.svg);
   background-repeat: no-repeat;
   background-position: 7px;
   display: flex;
