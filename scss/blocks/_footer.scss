@@ -1,0 +1,43 @@
+.footer {
+  background-color: $bg-footer;
+  color: $text-color-footer;
+  padding: 60px 0 50px;
+
+  @include mediaTablet {
+    padding: 40px 0 30px;
+
+    .footer__inner {
+      row-gap: 20px;
+    }
+    .footer__social {
+      column-gap: 20px;
+    }
+    .footer__social-item {
+      flex-basis: 30px;
+    }
+    .footer__social-link svg {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  row-gap: 30px;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+}
+.footer__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+}

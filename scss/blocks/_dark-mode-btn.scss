@@ -1,0 +1,32 @@
+.dark-mode-btn {
+  background-color: $light-black;
+  width: 51px;
+  height: 26px;
+  border-radius: 50px;
+  padding: 4px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.dark-mode-btn::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+
+  background-color: $white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  transition: 0.3s ease-in;
+}
+.dark-mode-btn-icon {
+  position: relative;
+}
+
+.dark-mode-btn--active::before {
+  left: 26px;
+}

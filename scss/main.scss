@@ -1,0 +1,21 @@
+
+// base
+
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/base';
+@import './base/dark-mode';
+
+
+
+// Blocks
+
+@import './blocks/navigation';
+@import './blocks/dark-mode-btn';
+@import './blocks/burger-menu';
+@import './blocks/header';
+@import './blocks/main-section';
+@import './blocks/project-block';
+@import './blocks/skills-block';
+@import './blocks/footer';

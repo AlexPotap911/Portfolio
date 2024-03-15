@@ -1,0 +1,64 @@
+.header {
+  background: $bg-header url(../img/header/header-bg.png) center no-repeat;
+  color: $text-color-header;
+
+  padding: clamp(1.25rem, -2.432rem + 18.41vw, 11.375rem) 0
+    clamp(1.25rem, -3.932rem + 25.91vw, 15.5rem);
+
+    @include mediaTablet{
+      .header__title {
+    font-size: 20px;
+  }
+  .header__title strong {
+    font-size: 40px;
+  }
+  .header__text {
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+    }
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-style: normal;
+
+  text-align: center;
+}
+.header__title {
+  font-size: 40px;
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  padding-bottom: 20px;
+}
+.header__title strong {
+  font-size: 60px;
+}
+.header__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2.4;
+  margin-bottom: 40px;
+}
+.header__btn {
+  padding: 12px 28px;
+  border-radius: 5px;
+  background: $accent-color;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.4;
+  letter-spacing: 0.15px;
+}
+.header__btn:hover {
+  opacity: 0.8;
+}
+.header__btn:active {
+  position: relative;
+  top: 1px;
+}
