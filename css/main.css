@@ -126,7 +126,7 @@ body {
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
-  color: #5c62ec;
+  color: #2196f3;
 }
 
 .dark {
@@ -199,12 +199,12 @@ body {
 
 .nav__menu-link--active {
   position: relative;
-  color: #5c62ec;
+  color: #2196f3;
 }
 
 .nav__menu-link--active::before {
   content: "";
-  background-color: #5c62ec;
+  background-color: #2196f3;
   width: 100%;
   height: 3px;
   position: absolute;
@@ -361,20 +361,86 @@ body {
 .header__btn {
   padding: 12px 28px;
   border-radius: 5px;
-  background: #5c62ec;
+  color: #2196f3;
   font-size: 16px;
   font-weight: 500;
   line-height: 2.4;
   letter-spacing: 0.15px;
+  overflow: hidden;
+  transition: 0.2s;
+  position: relative;
 }
 
 .header__btn:hover {
-  opacity: 0.8;
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 0.9s;
 }
 
 .header__btn:active {
   position: relative;
   top: 1px;
+}
+
+.header__btn span {
+  position: absolute;
+  display: block;
+}
+
+.header__btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.header__btn:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.9s;
+}
+
+.header__btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.header__btn:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.9s;
+  transition-delay: 0.25s;
+}
+
+.header__btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.header__btn:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.9s;
+  transition-delay: 0.5s;
+}
+
+.header__btn span:nth-child(4) {
+  left: 0;
+  bottom: -100%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.header__btn:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.9s;
+  transition-delay: 0.75s;
 }
 
 .main-section {
